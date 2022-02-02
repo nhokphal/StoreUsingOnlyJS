@@ -1,0 +1,47 @@
+#home{
+    
+    text-align: left;
+    position: relative;
+    font-family: monospace;
+    opacity: 1;
+    font-size: 50px;
+    margin-top: 0%;
+    text-decoration:none
+}
+#about{
+    font-size: 30px;
+    font-family: monospace;
+    width: 4em;
+    text-decoration:none
+
+}
+#contact{
+    text-decoration:none;
+    font-size: 30px;
+    width: 6em; 
+    font-family: monospace;
+}
+#heading{
+    text-align: top;
+    flex-direction: row-reverse;
+    font-size: 20px;
+    display: flex;
+    /*position: fixed;*/
+}
+.product{
+    font-size: 50px;
+    margin-left: 300px;
+    margin-top: 50px;
+    font-family: monospace;
+    text-align: left;
+}
+ .gallery{
+    margin-top: 100px;
+    margin-left: 300px;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 30ch 30ch 30ch;
+    grid-auto-rows: minmax(30ch, auto);
+    margin-bottom: 300px;
+  }
+  
