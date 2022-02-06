@@ -28,31 +28,44 @@ document.addEventListener('DOMContentLoaded', function(){
     let trendTitle = document.getElementById("trending");
     trendTitle.textContent = "Product";
 
-    var img1 = document.getElementById('gallery_item1');
-    var img2 = document.getElementById('gallery_item2');
-    var img3 = document.getElementById('gallery_item3');
-    var img4 = document.getElementById('gallery_item4');
-    var img5 = document.getElementById('gallery_item5');
-    var img6 = document.getElementById('gallery_item6');
 
-    arr = [img1, img2, img3, img4, img5, img6];
+   
+    
+    // getby ID text
+    //var img1 = document.getElementById('hrefimg');
+    // var img2 = document.getElementById('gallery_item2');
+    // var img3 = document.getElementById('gallery_item3');
+    // var img4 = document.getElementById('gallery_item4');
+    // var img5 = document.getElementById('gallery_item5');
+    // var img6 = document.getElementById('gallery_item6');
 
-    var onClick = function() {
-        for (var i = 0; i < arr.length; i++){
-          arr[i].style.color = "red";
-          console.log(arr[i])
-        }
-        img1.style.color = "red";
-        console.log(img1)
+    //arr = [img1, img2, img3, img4, img5, img6];
+   // arr = [img1];
 
-    }
+    const img1 = document.getElementById('hrefimg1');
+    const img2 = document.getElementById('hrefimg2');
+    const img3 = document.getElementById('hrefimg3');
+    const img4 = document.getElementById('hrefimg4');
+    const img5 = document.getElementById('hrefimg5');
+    const img6 = document.getElementById('hrefimg6');
+    arr = [img1, img2, img3, img4, img5, img6]
+          for (var i = 0; i < arr.length; i ++)
+          arr[i].href = 'message.html';
+
+    // var onClick = function() {
+    //     for (var i = 0; i < arr.length; i++){
+    //       arr[i].href  = "";
+    //     }
+    //      console.log(count)
+
+    // }
 
     img1.addEventListener('click', onClick);
     img2.addEventListener('click', onClick);
     img3.addEventListener('click', onClick);
-    img4.addEventListener('click', onClick);
-    img5.addEventListener('click', onClick);
-    img6.addEventListener('click', onClick);
+    //img4.addEventListener('click', onClick);
+    //img5.addEventListener('click', onClick);
+    //img6.addEventListener('click', onClick);
 
 
     
